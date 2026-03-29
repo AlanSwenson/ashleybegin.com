@@ -102,7 +102,7 @@
 
 - Optimize the build process using Astro's build command.
 - Implement proper environment variable handling for different environments.
-- Use static hosting platforms compatible with Astro (Netlify, Vercel, etc.).
+- Use static hosting platforms compatible with Astro (Cloudflare Workers, Vercel, etc.).
 - Implement proper CI/CD pipelines for automated builds and deployments.
 
 ## Styling with Tailwind CSS

@@ -6,13 +6,18 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "astro build && wrangler deploy --config dist/server/wrangler.json",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/tailwind": "^6.0.0",
+    "@astrojs/cloudflare": "^13.1.4",
+    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/postcss": "^4.0.6",
-    "astro": "^5.2.5",
+    "astro": "6.1.1",
     "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.78.0"
   }
 }
