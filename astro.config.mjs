@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
@@ -10,8 +10,10 @@ export default defineConfig({
     adapter: cloudflare({
         imageService: 'compile',
     }),
+    vite: {
+        plugins: [tailwindcss()],
+    },
     integrations: [
-        tailwind(),
         sitemap({
             changefreq: 'weekly',
             priority: 0.7,
